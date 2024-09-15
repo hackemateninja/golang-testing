@@ -3,11 +3,13 @@ package main
 
 import (
 	"fmt"
+	"helloworld/di"
 	"helloworld/hello"
 	"helloworld/integers"
 	"helloworld/iteration"
 	pointerserrors "helloworld/pointers_errors"
 	structsmethodsinterfaces "helloworld/structs_methods_interfaces"
+	"os"
 )
 
 func main() {
@@ -27,4 +29,8 @@ func main() {
 	wallet.Deposit(50)
 
 	fmt.Println(wallet.Balance())
+
+	di.Greet(os.Stdout, "Elodie")
+
+	// log.Fatal(http.ListenAndServe(":5001", http.HandlerFunc(di.MyGreetHandler)))
 }
