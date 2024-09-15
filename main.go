@@ -17,7 +17,11 @@ func main() {
 
 	rectangle := structsmethodsinterfaces.Rectangle{Height: 20, Width: 30}
 
+	circle := structsmethodsinterfaces.Circle{Radius: 10}
+
 	fmt.Println(rectangle.Area())
+
+	fmt.Println(circle.Area())
 
 	wallet := pointerserrors.Wallet{}
 	wallet.Deposit(50)
